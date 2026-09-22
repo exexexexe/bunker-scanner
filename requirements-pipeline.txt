@@ -1,0 +1,7 @@
+# The processing pipeline. Not needed by the deployed web service.
+numpy
+rasterio
+scipy
+matplotlib
+shapely
+pillow

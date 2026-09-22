@@ -1,0 +1,5 @@
+# Serving the public site. The pipeline's own dependencies (rasterio, scipy,
+# matplotlib, shapely, pillow) are only needed to *build* the site, which happens
+# locally — the deployed service just hands out static files.
+starlette==0.47.2
+uvicorn==0.35.0

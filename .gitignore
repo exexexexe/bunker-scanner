@@ -1,7 +1,11 @@
 .venv/
 data/dem/
-data/heritage/
 output/
 __pycache__/
 *.pyc
+
 .env
+
+data/heritage/
+site/
+data/imagery-index.json
