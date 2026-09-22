@@ -1,0 +1,1356 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-21T19:11:17Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1308904130,
+  "lat": 60.5222103,
+  "lon": 27.5528661,
+  "tags": {
+    "historic": "memorial",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 1308911476,
+  "lat": 60.5015945,
+  "lon": 27.5690643,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "memorial",
+    "military": "bunker",
+    "name": "Virolahti C20"
+  }
+},
+{
+  "type": "node",
+  "id": 1308921164,
+  "lat": 60.5888739,
+  "lon": 27.5995267,
+  "tags": {
+    "historic": "memorial",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 1309999255,
+  "lat": 60.6584545,
+  "lon": 27.6064617,
+  "tags": {
+    "historic": "memorial",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 1496648344,
+  "lat": 60.6830174,
+  "lon": 27.6704763,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 1496648501,
+  "lat": 60.6850184,
+  "lon": 27.6781068,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "military": "bunker",
+    "name": "Mehikkala C321"
+  }
+},
+{
+  "type": "node",
+  "id": 1496648528,
+  "lat": 60.6860353,
+  "lon": 27.6848893,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 1496648593,
+  "lat": 60.6878701,
+  "lon": 27.6892693,
+  "tags": {
+    "building": "bunker",
+    "historic": "building",
+    "military": "bunker",
+    "name": "386"
+  }
+},
+{
+  "type": "node",
+  "id": 1496648713,
+  "lat": 60.6971378,
+  "lon": 27.6875628,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 1496648916,
+  "lat": 60.7114328,
+  "lon": 27.6788974,
+  "tags": {
+    "bunker_type": "personnel_shelter",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "420"
+  }
+},
+{
+  "type": "node",
+  "id": 1510154723,
+  "lat": 60.6879433,
+  "lon": 27.6897458,
+  "tags": {
+    "building": "bunker",
+    "historic": "building",
+    "military": "bunker",
+    "name": "378"
+  }
+},
+{
+  "type": "node",
+  "id": 1947370197,
+  "lat": 60.6927947,
+  "lon": 27.6911981,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "351",
+    "website": "http://kulttuuriymparisto.nba.fi/netsovellus/rekisteriportaali/mjreki/read/asp/r_alakohde_det.aspx?ALAKOHDE_ID=16302&KOHDE_ID=1000019300"
+  }
+},
+{
+  "type": "node",
+  "id": 1947370211,
+  "lat": 60.6893709,
+  "lon": 27.6892443,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "379",
+    "website": "http://kulttuuriymparisto.nba.fi/netsovellus/rekisteriportaali/mjreki/read/asp/r_alakohde_det.aspx?ALAKOHDE_ID=16301&KOHDE_ID=1000019300"
+  }
+},
+{
+  "type": "node",
+  "id": 1947370220,
+  "lat": 60.6983615,
+  "lon": 27.6843091,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "343"
+  }
+},
+{
+  "type": "node",
+  "id": 1947370229,
+  "lat": 60.6941603,
+  "lon": 27.6915199,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "573",
+    "website": "http://kulttuuriymparisto.nba.fi/netsovellus/rekisteriportaali/mjreki/read/asp/r_alakohde_det.aspx?ALAKOHDE_ID=16305&KOHDE_ID=1000019299"
+  }
+},
+{
+  "type": "node",
+  "id": 1947370275,
+  "lat": 60.6888247,
+  "lon": 27.6907571,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "377",
+    "website": "http://kulttuuriymparisto.nba.fi/netsovellus/rekisteriportaali/mjreki/read/asp/r_alakohde_det.aspx?ALAKOHDE_ID=16300&KOHDE_ID=1000019300"
+  }
+},
+{
+  "type": "node",
+  "id": 1947370277,
+  "lat": 60.6956362,
+  "lon": 27.6904674,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "572",
+    "website": "http://kulttuuriymparisto.nba.fi/netsovellus/rekisteriportaali/mjreki/read/asp/r_alakohde_det.aspx?ALAKOHDE_ID=16306&KOHDE_ID=1000019299"
+  }
+},
+{
+  "type": "node",
+  "id": 1998303836,
+  "lat": 60.7198041,
+  "lon": 27.6833463,
+  "tags": {
+    "access": "yes",
+    "building": "bunker",
+    "bunker_type": "barrack",
+    "disused": "yes",
+    "historic": "bunker",
+    "military": "bunker",
+    "ref": "358",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781863,
+  "lat": 60.7262351,
+  "lon": 27.6953267,
+  "tags": {
+    "bunker_type": "barrack",
+    "disused": "yes",
+    "military": "bunker",
+    "ref": "412"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781902,
+  "lat": 60.7068062,
+  "lon": 27.6836629,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "personnel_shelter",
+    "military": "bunker",
+    "ref": "337"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781908,
+  "lat": 60.7390318,
+  "lon": 27.7192764,
+  "tags": {
+    "historic": "building",
+    "military": "bunker",
+    "ref": "368"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781914,
+  "lat": 60.7220679,
+  "lon": 27.6901656,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "command",
+    "disused": "yes",
+    "historic": "building",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781915,
+  "lat": 60.7053359,
+  "lon": 27.6833421,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "personnel_shelter",
+    "military": "bunker",
+    "ref": "338"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781917,
+  "lat": 60.7216371,
+  "lon": 27.6910025,
+  "tags": {
+    "access": "yes",
+    "building": "bunker",
+    "bunker_type": "barrack",
+    "disused": "yes",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "359"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781924,
+  "lat": 60.7326019,
+  "lon": 27.7077384,
+  "tags": {
+    "building": "bunker",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "441"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781932,
+  "lat": 60.7213779,
+  "lon": 27.6823759,
+  "tags": {
+    "access": "no",
+    "bunker_type": "pillbox",
+    "disused": "yes",
+    "historic": "bunker",
+    "military": "bunker",
+    "ref": "438"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781939,
+  "lat": 60.7354331,
+  "lon": 27.7178664,
+  "tags": {
+    "historic": "building",
+    "military": "bunker",
+    "ref": "371"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781958,
+  "lat": 60.7388371,
+  "lon": 27.7203205,
+  "tags": {
+    "historic": "building",
+    "military": "bunker",
+    "ref": "369"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781959,
+  "lat": 60.7024694,
+  "lon": 27.6802329,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "340"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781963,
+  "lat": 60.7437339,
+  "lon": 27.7165832,
+  "tags": {
+    "historic": "building",
+    "military": "bunker",
+    "ref": "373"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781968,
+  "lat": 60.7433412,
+  "lon": 27.7169652,
+  "tags": {
+    "historic": "building",
+    "military": "bunker",
+    "ref": "374"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781977,
+  "lat": 60.7235784,
+  "lon": 27.6933414,
+  "tags": {
+    "bunker_type": "barrack",
+    "disused": "yes",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "413"
+  }
+},
+{
+  "type": "node",
+  "id": 2419781992,
+  "lat": 60.7024737,
+  "lon": 27.6794175,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "341"
+  }
+},
+{
+  "type": "node",
+  "id": 2420706843,
+  "lat": 60.7407038,
+  "lon": 27.7173141,
+  "tags": {
+    "historic": "building",
+    "military": "bunker",
+    "ref": "383"
+  }
+},
+{
+  "type": "node",
+  "id": 3392642929,
+  "lat": 60.7343005,
+  "lon": 27.7134221,
+  "tags": {
+    "building": "bunker",
+    "historic": "building",
+    "military": "bunker",
+    "ref": "350"
+  }
+},
+{
+  "type": "node",
+  "id": 3471235891,
+  "lat": 60.6849753,
+  "lon": 27.6760457,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Mehikkala C322"
+  }
+},
+{
+  "type": "node",
+  "id": 3471235892,
+  "lat": 60.6835966,
+  "lon": 27.6675400,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Mehikkala Pallokorsu C611"
+  }
+},
+{
+  "type": "node",
+  "id": 3471237293,
+  "lat": 60.6834527,
+  "lon": 27.6699262,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Mehikkala"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283342,
+  "lat": 60.5261042,
+  "lon": 27.5498191,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C10"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283343,
+  "lat": 60.5271650,
+  "lon": 27.5469561,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Virolahti C11"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283344,
+  "lat": 60.5354457,
+  "lon": 27.5521547,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C15"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283345,
+  "lat": 60.5351724,
+  "lon": 27.5482195,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C16"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283349,
+  "lat": 60.5410890,
+  "lon": 27.5482935,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C17"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283350,
+  "lat": 60.5098783,
+  "lon": 27.5659434,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C170-171"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283351,
+  "lat": 60.5214668,
+  "lon": 27.5523199,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C179"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283352,
+  "lat": 60.5313285,
+  "lon": 27.5519024,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C181"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283353,
+  "lat": 60.5315152,
+  "lon": 27.5532182,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C182"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283354,
+  "lat": 60.5268085,
+  "lon": 27.5462494,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Virolahti C2"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283355,
+  "lat": 60.5284640,
+  "lon": 27.5421863,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C3"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283357,
+  "lat": 60.5219863,
+  "lon": 27.5538855,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C48A"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283358,
+  "lat": 60.5352909,
+  "lon": 27.5441370,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C5"
+  }
+},
+{
+  "type": "node",
+  "id": 3471283360,
+  "lat": 60.5417299,
+  "lon": 27.5500775,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker",
+    "name": "Virolahti C82"
+  }
+},
+{
+  "type": "node",
+  "id": 4749588647,
+  "lat": 60.6350117,
+  "lon": 27.6140698,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "personnel_shelter",
+    "capacity": "80",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Soikonvuoren luola",
+    "ref": "240"
+  }
+},
+{
+  "type": "node",
+  "id": 4749595597,
+  "lat": 60.6465753,
+  "lon": 27.6087878,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "troops_crew_bunker",
+    "capacity": "40",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "272",
+    "ref": "272"
+  }
+},
+{
+  "type": "node",
+  "id": 4749637847,
+  "lat": 60.6387849,
+  "lon": 27.6065082,
+  "tags": {
+    "building": "bunker",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "242"
+  }
+},
+{
+  "type": "node",
+  "id": 4749637860,
+  "lat": 60.6408185,
+  "lon": 27.6039506,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "241",
+    "ref": "241"
+  }
+},
+{
+  "type": "node",
+  "id": 4749637866,
+  "lat": 60.6487556,
+  "lon": 27.6143144,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "244",
+    "ref": "244"
+  }
+},
+{
+  "type": "node",
+  "id": 4749637880,
+  "lat": 60.6510107,
+  "lon": 27.6164187,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "246A",
+    "ref": "246A"
+  }
+},
+{
+  "type": "node",
+  "id": 4749637881,
+  "lat": 60.6511211,
+  "lon": 27.6163410,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "246",
+    "ref": "246"
+  }
+},
+{
+  "type": "node",
+  "id": 4749638121,
+  "lat": 60.6530831,
+  "lon": 27.6156377,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "248"
+  }
+},
+{
+  "type": "node",
+  "id": 4749638122,
+  "lat": 60.6537861,
+  "lon": 27.6109562,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "249"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148591,
+  "lat": 60.6584917,
+  "lon": 27.6067842,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "troops_crew_bunker",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 427",
+    "ref": "427"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148592,
+  "lat": 60.6582081,
+  "lon": 27.6090706,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 302",
+    "ref": "302"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148593,
+  "lat": 60.6577046,
+  "lon": 27.6104020,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 433",
+    "ref": "433"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148594,
+  "lat": 60.6569175,
+  "lon": 27.6095337,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 252",
+    "ref": "252"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148595,
+  "lat": 60.6622355,
+  "lon": 27.6085641,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "command",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 384",
+    "ref": "384"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148596,
+  "lat": 60.6618059,
+  "lon": 27.6117293,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 301",
+    "ref": "301"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148597,
+  "lat": 60.6625546,
+  "lon": 27.6131659,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "troops_crew_bunker",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 303",
+    "ref": "303"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148598,
+  "lat": 60.6651778,
+  "lon": 27.6121674,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "troops_crew_bunker",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 312",
+    "ref": "312"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148599,
+  "lat": 60.6655252,
+  "lon": 27.6142657,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "30",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 304",
+    "ref": "304"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148600,
+  "lat": 60.6668580,
+  "lon": 27.6190122,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 307",
+    "ref": "307"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148601,
+  "lat": 60.6672195,
+  "lon": 27.6195621,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 306",
+    "ref": "306"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148602,
+  "lat": 60.6683467,
+  "lon": 27.6257701,
+  "tags": {
+    "building": "bunker",
+    "building:levels": "2",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 352",
+    "ref": "352",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148603,
+  "lat": 60.6686940,
+  "lon": 27.6257122,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "command",
+    "capacity": "30",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 314",
+    "ref": "314"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148604,
+  "lat": 60.6696368,
+  "lon": 27.6232956,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 625",
+    "ref": "625"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148605,
+  "lat": 60.6687153,
+  "lon": 27.6288669,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "troops_crew_bunker",
+    "capacity": "30",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 316",
+    "ref": "316"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148606,
+  "lat": 60.6700763,
+  "lon": 27.6298364,
+  "tags": {
+    "building": "bunker",
+    "building:levels": "3",
+    "bunker_type": "gun_emplacement",
+    "capacity": "40",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 308",
+    "ref": "308",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148607,
+  "lat": 60.6710545,
+  "lon": 27.6328030,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 309",
+    "ref": "309"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148608,
+  "lat": 60.6721602,
+  "lon": 27.6298509,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 624",
+    "ref": "624"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148609,
+  "lat": 60.6711324,
+  "lon": 27.6364497,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "40",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 310-443",
+    "ref": "310-443"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148610,
+  "lat": 60.6721319,
+  "lon": 27.6364786,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 313",
+    "ref": "313"
+  }
+},
+{
+  "type": "node",
+  "id": 4753148611,
+  "lat": 60.6733581,
+  "lon": 27.6363194,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 623",
+    "ref": "623"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205469,
+  "lat": 60.6742653,
+  "lon": 27.6400240,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 622",
+    "ref": "622"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205470,
+  "lat": 60.6747330,
+  "lon": 27.6403858,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 621",
+    "ref": "621"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205471,
+  "lat": 60.6761647,
+  "lon": 27.6431497,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "command",
+    "description": "Unfinished",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 355",
+    "ref": "355"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205472,
+  "lat": 60.6763631,
+  "lon": 27.6468543,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "description": "Unfinished",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 354",
+    "ref": "354"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205473,
+  "lat": 60.6764836,
+  "lon": 27.6521941,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 335",
+    "ref": "335"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205474,
+  "lat": 60.6771143,
+  "lon": 27.6546541,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 334",
+    "ref": "334"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205475,
+  "lat": 60.6783191,
+  "lon": 27.6547265,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 620",
+    "ref": "620"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205476,
+  "lat": 60.6790561,
+  "lon": 27.6559421,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 619",
+    "ref": "619"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205477,
+  "lat": 60.6776742,
+  "lon": 27.6630473,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 333/332",
+    "ref": "333/332"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205478,
+  "lat": 60.6784750,
+  "lon": 27.6610792,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 616",
+    "ref": "616"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205479,
+  "lat": 60.6791694,
+  "lon": 27.6641616,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 615",
+    "ref": "615"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205492,
+  "lat": 60.6793253,
+  "lon": 27.6666795,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 437",
+    "ref": "437"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205493,
+  "lat": 60.6796797,
+  "lon": 27.6663033,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 329",
+    "ref": "329"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205494,
+  "lat": 60.6806009,
+  "lon": 27.6666506,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "gun_emplacement",
+    "capacity": "20",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Korsu 330",
+    "ref": "330"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205495,
+  "lat": 60.6823440,
+  "lon": 27.6674899,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 613",
+    "ref": "613"
+  }
+},
+{
+  "type": "node",
+  "id": 4753205500,
+  "lat": 60.6831943,
+  "lon": 27.6680687,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "capacity": "9",
+    "historic": "bunker",
+    "military": "bunker",
+    "name": "Pallokorsu 612",
+    "ref": "612"
+  }
+},
+{
+  "type": "node",
+  "id": 6306222202,
+  "lat": 60.7168099,
+  "lon": 27.6805803,
+  "tags": {
+    "building": "bunker",
+    "bunker_type": "personnel_shelter",
+    "historic": "yes",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 8511431735,
+  "lat": 60.5486130,
+  "lon": 27.5682914,
+  "tags": {
+    "bunker_type": "pillbox",
+    "historic": "building",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 13175782338,
+  "lat": 60.5893436,
+  "lon": 27.6087821,
+  "tags": {
+    "building": "bunker",
+    "historic": "building",
+    "military": "bunker"
+  }
+}
+
+  ]
+}

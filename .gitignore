@@ -1,0 +1,7 @@
+.venv/
+data/dem/
+data/heritage/
+output/
+__pycache__/
+*.pyc
+.env

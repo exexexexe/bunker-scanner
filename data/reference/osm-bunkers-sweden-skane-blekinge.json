@@ -1,0 +1,146 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-22T18:49:05Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2409112700,
+  "lat": 56.1092460,
+  "lon": 15.5495669,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "name": "Batteri Ellenabben",
+    "url": "http://www.fortsweden.com/objects.php?id=50d2ce670a5603.23980015"
+  }
+},
+{
+  "type": "node",
+  "id": 2409112701,
+  "lat": 56.1076309,
+  "lon": 15.5591450,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "name": "Batteri Hytterna",
+    "url": "http://www.fortsweden.com/objects.php?id=50d2ce670a5603.23980063"
+  }
+},
+{
+  "type": "node",
+  "id": 2409112705,
+  "lat": 56.0996233,
+  "lon": 15.5484366,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "name": "Bäckastrand Artilleri",
+    "url": "http://www.fortsweden.com/objects.php?id=50d2ce670a5603.23980062"
+  }
+},
+{
+  "type": "node",
+  "id": 2409112706,
+  "lat": 56.0991170,
+  "lon": 15.5455880,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "name": "Bäckastrand Pjäs"
+  }
+},
+{
+  "type": "node",
+  "id": 2409112707,
+  "lat": 56.0992006,
+  "lon": 15.5500200,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "name": "Bäckastrand Pjäs"
+  }
+},
+{
+  "type": "node",
+  "id": 2893106812,
+  "lat": 55.3580190,
+  "lon": 13.2237679,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "ref": "275"
+  }
+},
+{
+  "type": "node",
+  "id": 2893114277,
+  "lat": 55.3582638,
+  "lon": 13.2229859,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "ref": "276"
+  }
+},
+{
+  "type": "node",
+  "id": 2893304038,
+  "lat": 55.3611919,
+  "lon": 13.2127958,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "ref": "279"
+  }
+},
+{
+  "type": "node",
+  "id": 2893319744,
+  "lat": 55.3604450,
+  "lon": 13.2149154,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "ref": "274"
+  }
+},
+{
+  "type": "node",
+  "id": 8302403039,
+  "lat": 55.3592679,
+  "lon": 13.2194787,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "ref": "277"
+  }
+},
+{
+  "type": "node",
+  "id": 12095953323,
+  "lat": 55.3637508,
+  "lon": 13.2045669,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker"
+  }
+},
+{
+  "type": "node",
+  "id": 12888835075,
+  "lat": 56.0997383,
+  "lon": 15.5516250,
+  "tags": {
+    "building": "bunker",
+    "military": "bunker",
+    "name": "Bäckastrand Pjäs"
+  }
+}
+
+  ]
+}

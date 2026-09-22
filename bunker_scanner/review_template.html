@@ -1,0 +1,306 @@
+<title>Bunker Scanner Triage</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    color-scheme: light;
+    --ground:#e7ebed; --surface:#ffffff; --surface-2:#f1f4f5; --line:#d1d8dc;
+    --ink:#16212a; --muted:#5e6d78; --faint:#8b99a3;
+    --undoc:#b5179e; --known:#2f6690; --other:#9a6b1f; --demoted:#8a949c;
+    --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --ground:#0c1215; --surface:#141d22; --surface-2:#1a252b; --line:#2a373f;
+      --ink:#e2ebf0; --muted:#93a5b1; --faint:#6c7d88;
+      --undoc:#f472d8; --known:#7fb2dd; --other:#d6a548; --demoted:#7d8a93;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --ground:#0c1215; --surface:#141d22; --surface-2:#1a252b; --line:#2a373f;
+    --ink:#e2ebf0; --muted:#93a5b1; --faint:#6c7d88;
+    --undoc:#f472d8; --known:#7fb2dd; --other:#d6a548; --demoted:#7d8a93;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+       font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:24px 56px}
+  a{color:inherit}
+  h1{font-size:23px;font-weight:600;margin:0;letter-spacing:-.01em;text-wrap:balance}
+  h2{font-size:12px;font-weight:600;margin:0 0 10px;text-transform:uppercase;
+     letter-spacing:.09em;color:var(--muted)}
+  .sub{color:var(--muted);margin:4px 0 0;font-size:13px}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  header.page{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;
+              justify-content:space-between;margin-bottom:20px}
+  .caveat{border-left:3px solid var(--undoc);background:var(--surface);
+          padding:10px 14px;margin:0 0 22px;font-size:13px;color:var(--muted)}
+  .caveat strong{color:var(--ink);font-weight:600}
+
+  .stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:3px;
+        padding:9px 13px;min-width:104px}
+  .stat b{display:block;font-family:var(--mono);font-size:19px;font-weight:600;
+          font-variant-numeric:tabular-nums;line-height:1.2}
+  .stat span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+  .stat.undoc b{color:var(--undoc)} .stat.known b{color:var(--known)}
+
+  .overview{position:relative;border:1px solid var(--line);background:var(--surface);
+            border-radius:3px;overflow:hidden;margin-bottom:8px;line-height:0}
+  .overview img{width:100%;display:block}
+  .overview svg{position:absolute;inset:0;width:100%;height:100%}
+  .overview polyline{fill:none;stroke-width:.5;vector-effect:non-scaling-stroke;
+                     cursor:pointer;opacity:.95}
+  .overview circle{cursor:pointer}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted);
+          margin-bottom:26px}
+  .legend i{display:inline-block;width:20px;height:2px;vertical-align:middle;
+            margin-right:6px;border-radius:2px}
+
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:18px}
+  .controls label{font-size:12px;color:var(--muted);text-transform:uppercase;
+                  letter-spacing:.07em;margin-right:2px}
+  button.chip{font:inherit;font-size:12px;padding:6px 12px;border-radius:999px;
+              border:1px solid var(--line);background:var(--surface);color:var(--muted);
+              cursor:pointer;transition:background .12s,color .12s,border-color .12s}
+  button.chip[aria-pressed="true"]{background:var(--ink);color:var(--ground);
+                                   border-color:var(--ink)}
+  button.chip:focus-visible,.card:focus-visible{outline:2px solid var(--undoc);outline-offset:2px}
+  input[type=range]{accent-color:var(--undoc);width:130px}
+
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(310px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:3px;
+        padding:13px;display:flex;flex-direction:column;gap:10px;scroll-margin-top:20px}
+  .card.flash{border-color:var(--undoc);box-shadow:0 0 0 2px color-mix(in srgb,var(--undoc) 28%,transparent)}
+  .card header{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .rank{font-family:var(--mono);font-size:12px;color:var(--faint)}
+  .score{font-family:var(--mono);font-size:21px;font-weight:600;
+         font-variant-numeric:tabular-nums;line-height:1}
+  .status{font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+          padding:3px 8px;border-radius:2px;white-space:nowrap}
+  .s-undocumented{color:var(--undoc);background:color-mix(in srgb,var(--undoc) 12%,transparent)}
+  .s-known_military{color:var(--known);background:color-mix(in srgb,var(--known) 14%,transparent)}
+  .s-known_other{color:var(--other);background:color-mix(in srgb,var(--other) 16%,transparent)}
+  .crops{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+  .crops figure{margin:0;line-height:0}
+  .crops img{width:100%;aspect-ratio:1;object-fit:cover;background:var(--surface-2);
+             border:1px solid var(--line);border-radius:2px;image-rendering:pixelated}
+  .crops .no-photo{aspect-ratio:1;border:1px dashed var(--line);border-radius:2px;
+                   display:grid;place-items:center;font-size:10px;color:var(--faint);
+                   line-height:1.2;text-align:center;padding:4px}
+  .crops figcaption{font-size:10px;color:var(--faint);text-transform:uppercase;
+                    letter-spacing:.07em;line-height:1.6;margin-top:3px}
+  dl.metrics{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:0;font-size:12px}
+  dl.metrics dt{color:var(--muted)}
+  dl.metrics dd{margin:0;font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .note{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px}
+  .coords{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px}
+  .coords button{font:inherit;font-size:11px;padding:3px 8px;border:1px solid var(--line);
+                 background:var(--surface-2);color:var(--muted);border-radius:2px;cursor:pointer}
+  .demoted-card{opacity:.62}
+  .empty{color:var(--muted);padding:30px 0;text-align:center}
+  footer.page{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);
+              font-size:12px;color:var(--faint)}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+  @media (max-width:520px){ .crops{grid-template-columns:repeat(2,1fr)} h1{font-size:20px} }
+</style>
+
+<div class="wrap">
+  <header class="page">
+    <div>
+      <h1>Bunker Scanner Triage</h1>
+      <p class="sub" id="subtitle"></p>
+    </div>
+    <div class="controls" style="margin:0">
+      <button class="chip" id="theme" aria-pressed="false">Dark</button>
+    </div>
+  </header>
+
+  <p class="caveat"><strong>Candidates, not finds.</strong> Score ranks a shortlist;
+  it is not a probability. Everything here still needs a human to look at it, and
+  anything on the ground needs the usual trespass and private-land care.
+  The aerial frame is a <em>negative</em> check — it cannot show a structure under
+  canopy, which is the whole reason this uses LiDAR, but it does show when a
+  candidate has a mundane explanation on the surface.</p>
+
+  <div class="stats" id="stats"></div>
+
+  <h2>Survey window — sky-view factor</h2>
+  <div class="overview">
+    <img id="overview" alt="Sky-view factor render of the survey window">
+    <svg id="markers" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--undoc)"></i>undocumented</span>
+    <span><i style="background:var(--known)"></i>known military</span>
+    <span><i style="background:var(--other)"></i>other heritage</span>
+    <span><i style="background:var(--demoted)"></i>demoted as drainage</span>
+  </div>
+
+  <div class="controls">
+    <label for="f-all">Show</label>
+    <button class="chip" id="f-all" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="undocumented" aria-pressed="false">Undocumented</button>
+    <button class="chip" data-filter="known" aria-pressed="false">Known</button>
+    <button class="chip" data-filter="promoted" aria-pressed="false">Not demoted</button>
+    <label for="minscore" style="margin-left:8px">Min score</label>
+    <input type="range" id="minscore" min="0" max="0.7" step="0.05" value="0">
+    <span class="mono" id="minscore-val">0.00</span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>No candidates match these filters.</p>
+
+  <footer class="page" id="footer"></footer>
+</div>
+
+<script>
+  const DATA = /*__DATA__*/null;
+  const $ = (id) => document.getElementById(id);
+  const fmt = (n, d = 2) => Number(n).toFixed(d);
+  const statusOf = (c) => c.status || "unclassified";
+  const colourOf = (c) => c.demoted ? "var(--demoted)"
+    : statusOf(c) === "undocumented" ? "var(--undoc)"
+    : statusOf(c) === "known_other" ? "var(--other)" : "var(--known)";
+
+  const win = DATA.window;
+  const all = DATA.candidates;
+
+  $("overview").src = DATA.overview;
+  const span = Math.round(win.bbox[2] - win.bbox[0]);
+  $("subtitle").textContent =
+    `${win.name} · ${span} × ${Math.round(win.bbox[3] - win.bbox[1])} m at `
+    + `${win.resolution_m} m · ${win.crs} · tiles ${win.tiles.join(", ")}`;
+  $("footer").innerHTML =
+    `Terrain: ${escapeHtml(win.attribution)}. Heritage classification: Museovirasto, `
+    + `Kulttuuriympäristön paikkatietoaineistot, CC BY 4.0. `
+    + `Elevation in window ${fmt(DATA.elevation_range[0], 1)}–${fmt(DATA.elevation_range[1], 1)} m`
+    + `${DATA.void_pixels ? `, ${DATA.void_pixels} filled nodata px` : ""}. `
+    + `Crops are ${DATA.crop_m} m across.`
+    + (DATA.imagery_years?.length
+        ? ` Aerial imagery: MML orthophotos ${DATA.imagery_years.join(", ")}, CC BY 4.0.`
+        : "");
+
+  function escapeHtml(s){ const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
+
+  const counts = all.reduce((acc, c) => {
+    acc.total++;
+    acc[statusOf(c)] = (acc[statusOf(c)] || 0) + 1;
+    if (c.demoted) acc.demoted++;
+    return acc;
+  }, { total: 0, demoted: 0 });
+  $("stats").innerHTML = [
+    ["total", "candidates", counts.total, ""],
+    ["undoc", "undocumented", counts.undocumented || 0, "undoc"],
+    ["known", "already known", (counts.known_military || 0) + (counts.known_other || 0), "known"],
+    ["dem", "demoted", counts.demoted, ""],
+  ].map(([, label, value, cls]) =>
+    `<div class="stat ${cls}"><b>${value}</b><span>${label}</span></div>`).join("");
+
+  // Overview markers, drawn in percentage space.
+  $("markers").innerHTML = all.map((c) => {
+    const pts = (c.path || []).map((p) => p.join(",")).join(" ");
+    return `<polyline points="${pts}" stroke="${colourOf(c)}" data-id="${c.id}">`
+      + `<title>#${c.id} score ${fmt(c.score)} — ${statusOf(c).replace("_", " ")}</title></polyline>`;
+  }).join("");
+  $("markers").addEventListener("click", (e) => {
+    const id = e.target.closest("[data-id]")?.dataset.id;
+    if (!id) return;
+    const card = document.querySelector(`.card[data-id="${id}"]`);
+    if (!card) return;
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+    card.classList.add("flash");
+    setTimeout(() => card.classList.remove("flash"), 1600);
+  });
+
+  function cardHtml(c) {
+    const status = statusOf(c);
+    const known = status.startsWith("known");
+    return `<article class="card${c.demoted ? " demoted-card" : ""}" data-id="${c.id}" tabindex="0">
+      <header>
+        <div>
+          <div class="rank">#${c.id} · ${c.polarity}${c.demoted ? " · demoted" : ""}</div>
+          <div class="score" style="color:${colourOf(c)}">${fmt(c.score)}</div>
+        </div>
+        <span class="status s-${status}">${status.replace("_", " ")}</span>
+      </header>
+      <div class="crops">
+        <figure><img src="${c.lrm_crop}" alt="Local relief model crop for candidate ${c.id}"><figcaption>relief</figcaption></figure>
+        <figure><img src="${c.svf_crop}" alt="Sky-view factor crop for candidate ${c.id}"><figcaption>sky-view</figcaption></figure>
+        <figure><img src="${c.shade_crop}" alt="Hillshade crop for candidate ${c.id}"><figcaption>hillshade</figcaption></figure>
+        ${c.ortho_crop
+          ? `<figure><img src="${c.ortho_crop}" alt="Aerial photograph of candidate ${c.id}"><figcaption>aerial ${c.ortho_year}</figcaption></figure>`
+          : `<figure><div class="no-photo">no imagery</div><figcaption>aerial</figcaption></figure>`}
+      </div>
+      <dl class="metrics">
+        <dt>length</dt><dd>${fmt(c.length_m, 0)} m over ${c.beads} beads</dd>
+        <dt>spacing cv</dt><dd>${fmt(c.spacing_cv)}</dd>
+        <dt>beadedness</dt><dd>${fmt(c.beadedness)}</dd>
+        <dt>surroundings</dt><dd>${fmt(c.roughness, 3)}</dd>
+      </dl>
+      ${known ? `<p class="note">Inside <strong>${escapeHtml(c.site_name || "a registered site")}</strong>
+        — ${escapeHtml(c.site_subkind || c.site_kind || "")}, ${fmt(c.distance_m, 0)} m away.
+        Means already-surveyed ground, not that this exact feature is recorded.</p>` : ""}
+      <div class="coords">
+        <span>${fmt(c.centre_lat, 5)}, ${fmt(c.centre_lon, 5)}</span>
+        <button type="button" data-copy="${fmt(c.centre_lat, 5)}, ${fmt(c.centre_lon, 5)}">Copy</button>
+      </div>
+    </article>`;
+  }
+
+  let filter = "all", minScore = 0;
+  function render() {
+    const shown = all.filter((c) => {
+      if (c.score < minScore) return false;
+      if (filter === "undocumented") return statusOf(c) === "undocumented";
+      if (filter === "known") return statusOf(c).startsWith("known");
+      if (filter === "promoted") return !c.demoted;
+      return true;
+    });
+    $("grid").innerHTML = shown.map(cardHtml).join("");
+    $("empty").hidden = shown.length > 0;
+    const visible = new Set(shown.map((c) => String(c.id)));
+    $("markers").querySelectorAll("polyline").forEach((el) => {
+      el.style.opacity = visible.has(el.dataset.id) ? ".95" : ".12";
+    });
+  }
+
+  document.querySelectorAll("[data-filter]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filter = btn.dataset.filter;
+      document.querySelectorAll("[data-filter]").forEach((b) =>
+        b.setAttribute("aria-pressed", String(b === btn)));
+      render();
+    });
+  });
+  $("minscore").addEventListener("input", (e) => {
+    minScore = Number(e.target.value);
+    $("minscore-val").textContent = fmt(minScore);
+    render();
+  });
+  $("grid").addEventListener("click", async (e) => {
+    const btn = e.target.closest("[data-copy]");
+    if (!btn) return;
+    try {
+      await navigator.clipboard.writeText(btn.dataset.copy);
+      btn.textContent = "Copied";
+    } catch {
+      const range = document.createRange();
+      range.selectNodeContents(btn.previousElementSibling);
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      btn.textContent = "Selected";
+    }
+    setTimeout(() => { btn.textContent = "Copy"; }, 1400);
+  });
+  $("theme").addEventListener("click", () => {
+    const dark = document.documentElement.getAttribute("data-theme") === "dark";
+    document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
+    $("theme").textContent = dark ? "Dark" : "Light";
+    $("theme").setAttribute("aria-pressed", String(!dark));
+  });
+
+  render();
+</script>

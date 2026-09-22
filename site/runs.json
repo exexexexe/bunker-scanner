@@ -1,0 +1,23 @@
+[
+  {
+    "name": "miehikkala",
+    "candidates": 21,
+    "undocumented": 2,
+    "area_km2": 0.7056,
+    "size_mb": 1.282028
+  },
+  {
+    "name": "salpa-virolahti-c10",
+    "candidates": 14,
+    "undocumented": 1,
+    "area_km2": 0.3655485390000718,
+    "size_mb": 0.819862
+  },
+  {
+    "name": "control-forest-keski",
+    "candidates": 41,
+    "undocumented": 41,
+    "area_km2": 2.589056539600044,
+    "size_mb": 3.268146
+  }
+]

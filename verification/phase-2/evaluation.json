@@ -1,0 +1,244 @@
+{
+  "params": {
+    "min_relief": 0.35,
+    "max_gap_m": 20.0,
+    "min_beads": 6,
+    "min_length_m": 60.0
+  },
+  "tolerance_m": 20.0,
+  "windows": {
+    "miehikkala": {
+      "area_km2": 0.706,
+      "chains": 21,
+      "candidates": [
+        {
+          "rank": 1,
+          "score": 0.679,
+          "polarity": "raised",
+          "length_m": 67.9,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 22.8
+        },
+        {
+          "rank": 2,
+          "score": 0.673,
+          "polarity": "raised",
+          "length_m": 90.1,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 22.1
+        },
+        {
+          "rank": 3,
+          "score": 0.659,
+          "polarity": "raised",
+          "length_m": 64.3,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 46.8
+        },
+        {
+          "rank": 4,
+          "score": 0.658,
+          "polarity": "cut",
+          "length_m": 75.1,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 8.2
+        },
+        {
+          "rank": 5,
+          "score": 0.648,
+          "polarity": "cut",
+          "length_m": 70.8,
+          "demoted": false,
+          "matched": true,
+          "nearest_truth_m": 1.9
+        },
+        {
+          "rank": 6,
+          "score": 0.627,
+          "polarity": "raised",
+          "length_m": 98.3,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 48.9
+        },
+        {
+          "rank": 7,
+          "score": 0.597,
+          "polarity": "raised",
+          "length_m": 60.3,
+          "demoted": false,
+          "matched": true,
+          "nearest_truth_m": 1.2
+        },
+        {
+          "rank": 8,
+          "score": 0.583,
+          "polarity": "cut",
+          "length_m": 71.6,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 20.8
+        },
+        {
+          "rank": 9,
+          "score": 0.555,
+          "polarity": "raised",
+          "length_m": 81.3,
+          "demoted": false,
+          "matched": true,
+          "nearest_truth_m": 2.9
+        },
+        {
+          "rank": 10,
+          "score": 0.555,
+          "polarity": "cut",
+          "length_m": 147.0,
+          "demoted": false,
+          "matched": true,
+          "nearest_truth_m": 0.3
+        },
+        {
+          "rank": 11,
+          "score": 0.543,
+          "polarity": "cut",
+          "length_m": 72.2,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 57.0
+        },
+        {
+          "rank": 12,
+          "score": 0.535,
+          "polarity": "raised",
+          "length_m": 70.8,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 22.6
+        },
+        {
+          "rank": 13,
+          "score": 0.526,
+          "polarity": "cut",
+          "length_m": 69.8,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 21.0
+        },
+        {
+          "rank": 14,
+          "score": 0.494,
+          "polarity": "cut",
+          "length_m": 118.2,
+          "demoted": false,
+          "matched": true,
+          "nearest_truth_m": 0.9
+        },
+        {
+          "rank": 15,
+          "score": 0.407,
+          "polarity": "cut",
+          "length_m": 62.9,
+          "demoted": false,
+          "matched": false,
+          "nearest_truth_m": 4.2
+        },
+        {
+          "rank": 16,
+          "score": 0.172,
+          "polarity": "cut",
+          "length_m": 147.4,
+          "demoted": true,
+          "matched": false,
+          "nearest_truth_m": 134.5
+        },
+        {
+          "rank": 17,
+          "score": 0.166,
+          "polarity": "cut",
+          "length_m": 78.0,
+          "demoted": true,
+          "matched": false,
+          "nearest_truth_m": 298.2
+        },
+        {
+          "rank": 18,
+          "score": 0.164,
+          "polarity": "cut",
+          "length_m": 65.3,
+          "demoted": true,
+          "matched": false,
+          "nearest_truth_m": 237.6
+        },
+        {
+          "rank": 19,
+          "score": 0.161,
+          "polarity": "cut",
+          "length_m": 97.6,
+          "demoted": true,
+          "matched": false,
+          "nearest_truth_m": 56.6
+        },
+        {
+          "rank": 20,
+          "score": 0.151,
+          "polarity": "cut",
+          "length_m": 87.5,
+          "demoted": true,
+          "matched": false,
+          "nearest_truth_m": 341.1
+        },
+        {
+          "rank": 21,
+          "score": 0.135,
+          "polarity": "cut",
+          "length_m": 75.2,
+          "demoted": true,
+          "matched": false,
+          "nearest_truth_m": 147.7
+        }
+      ]
+    }
+  },
+  "density_per_km2": {
+    "miehikkala (labelled)": {
+      "area_km2": 0.706,
+      "per_km2": {
+        "0.3": 21.3,
+        "0.4": 21.3,
+        "0.5": 18.4,
+        "0.6": 8.5
+      }
+    },
+    "forest-keski": {
+      "area_km2": 2.589,
+      "per_km2": {
+        "0.3": 9.3,
+        "0.4": 7.0,
+        "0.5": 2.7,
+        "0.6": 1.2
+      }
+    },
+    "farmland-pohjanmaa": {
+      "area_km2": 2.552,
+      "per_km2": {
+        "0.3": 5.5,
+        "0.4": 3.9,
+        "0.5": 1.6,
+        "0.6": 0.8
+      }
+    },
+    "forest-hame": {
+      "area_km2": 2.694,
+      "per_km2": {
+        "0.3": 6.3,
+        "0.4": 6.3,
+        "0.5": 3.0,
+        "0.6": 0.0
+      }
+    }
+  }
+}
