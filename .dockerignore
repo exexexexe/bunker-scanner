@@ -1,0 +1,10 @@
+.venv/
+data/
+output/
+verification/
+tests/
+scripts/
+bunker_scanner/
+__pycache__/
+*.pyc
+.git/
